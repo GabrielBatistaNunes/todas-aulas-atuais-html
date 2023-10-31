@@ -1,7 +1,7 @@
 # todas-aulas-atuais-html
 todas as aulas de html até agora
 
-
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,4 +30,4 @@ todas as aulas de html até agora
         novoParagrafo.style.fontSize = '80%';
     </script>
 </body>
-</html>
+</html> -->
