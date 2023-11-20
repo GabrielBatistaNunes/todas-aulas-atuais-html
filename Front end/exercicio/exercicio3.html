@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Título do site</h1>
+    <h2>subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magni nemo, quam, eum nobis animi inventore ut quia sint id itaque facilis. Maxime iure quidem praesentium similique, quasi dolorum ab?</p>    
+</body>
+<script>
+
+    let titulo = document.querySelector('h1');
+    titulo.innerText='Oi, oi, oi!!!';
+
+    const subtitulo = document.createElement('h2');
+    subtitulo.innerText='Subtítulo';
+
+    const paragrafo = document.querySelector('p');
+    paragrafo.appendChild(subtitulo);
+</script>
+</html> 

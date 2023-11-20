@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    // Cria um elemento H1 e guarda na variável cabecalho
+    let cabecalho = document.createElement('h1');
+
+    let titulo = document.createElement('h1');
+    let subtitulo = document.createElement('h2');
+    let lorem = document.createElement('p');
+
+
+    // Altera o valor da propriedade innerText (conteúdo de texto do elemento)
+    cabecalho.innerText = 'Blog 2023';
+    
+    titulo.innerText = 'Título do site'
+    subtitulo.innerText = 'Subtítulo'
+    lorem.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem distinctio, officiis vel magnam vero corrupti, exercitationem nobis iste veniam cupiditate eum iusto ducimus excepturi autem nemo commodi explicabo ad similique.'
+
+    // Acrescenta o elemento cabecalho (H1) abaixo/dentro do body do documento.
+    
+    document.body.appendChild(cabecalho);
+    
+    document.body.appendChild(titulo);
+    document.body.appendChild(subtitulo);
+    document.body.appendChild(lorem);
+    // Neste ponto o browser passa a renderizar o novo elemento - depois de ele começar a fazer parte da árvore DOM (Document Object Model).
+
+</script>
+</html>

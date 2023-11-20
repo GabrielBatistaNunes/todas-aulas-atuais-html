@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>Uma listagem</h2>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facilis fugit ducimus quas veniam, sed iusto perferendis praesentium atque necessitatibus vel esse fugiat modi doloribus, eum sint obcaecati eaque cupiditate.</p>
+        <ul id="listagem">
+            <li>um item</li>
+            <li>outro item</li>
+            <li>mais outro item</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </main>
+    <footer>
+        3KTI-2023
+    </footer>
+</body>
+<script> 
+    const listagem= document.querySelector('#listagem');
+
+    for(i=0;i<4;i++){
+    const item = document.createElement('li');
+    item.innerHTML = `<img src="/avatares/avatar${i+1}.png" width="50" height="50">`;
+    listagem.appendChild(item);
+}
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api De Frases</title>
+</head>
+<body>
+    <h1>Frases</h1>
+    <ul id="infoFrases"></ul>
+
+    <script>
+    async function frases() 
+{
+        let asfrases = ''
+        let urlFrases = `https://type.fit/api/quotes`
+        const resposta = await fetch('https://type.fit/api/quotes');
+        const dadosFrases = await resposta.json();
+
+        const infoFrases = document.querySelector('#infoFrases');
+        infoFrases.innerHTML = `
+        <li>${dadosFrases.text}</li>
+        `
+};
+        frases();
+    </script>
+</body>
+</html>

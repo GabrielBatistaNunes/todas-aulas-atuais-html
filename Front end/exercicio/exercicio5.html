@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" name="bt01" value="click">
+</body>
+<script>
+    const botao = document.querySelector('input');
+    botao.addEventListener('click', mudaCorPagina);
+
+    function mudaCorPagina(){
+        const r = Number.parseInt(Math.random()*255);
+        const g = Number.parseInt(Math.random()*255);
+        const b = Number.parseInt(Math.random()*255);
+        document.body.style.backgroundColor=`rgb(${r},${g},${b})`;
+    }
+</script>
+</html>

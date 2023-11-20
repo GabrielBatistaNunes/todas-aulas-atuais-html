@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto do blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <style>
+            body {
+        background-color: rgb(246, 179, 205);
+        margin: 0;
+        padding: 0;
+        }
+
+            bloco {
+        display: table-column;
+        width: 300px;
+        height: 150px;
+        background-color: rgb(67, 66, 66);
+        border-radius: 15px;
+        border: 3px solid orange;
+        margin: 20px;
+        padding: 20px;
+        }
+        composicao {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            color: aqua;
+            background-color: rgb(226, 43, 43);
+            padding:10px;
+            align-items: center;
+            justify-content:center;
+            border-radius: 10%;
+        }
+        #borda
+        {
+        border-radius: 14%;
+        }
+        #centro
+        {
+            align-items: center;
+            justify-content:center;
+        }
+    </style>
+</head>
+<body>
+    <header><h1 id="centro">Projeto do blog</h1></header>
+        <main>
+            <fundo>
+            <composicao> 
+                <img id="borda" src="/img/img1.png" width="" height="250"/>
+                <bloco>pipipi, popopo texto, texto, texto, texto, texto</bloco>
+                </composicao>
+            </composicao>
+        </main>
+    <footer> 
+        <h4>Publicado em 15/03/2023</h4>
+        <nav>
+        <a href="license">License</a> - <a href="index.html">Início</a>
+        </nav>
+    </footer>
+</body>
+</html>

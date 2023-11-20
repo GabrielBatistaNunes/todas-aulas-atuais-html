@@ -1,0 +1,16 @@
+header
+            {
+                display:flex;
+            background-color: rgb(126, 163, 134);
+            border-style: solid;
+            border-color: rgb(86, 33, 111);
+            border-width: 10px;
+            border-style: groove;
+            border-radius: 18%;
+            padding: 10px;
+            margin: 30px;
+            width: 260px;
+            height: 80px;
+            align-items: center;
+            justify-content:center;
+            }

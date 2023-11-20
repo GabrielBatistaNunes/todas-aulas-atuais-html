@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+</head>
+<body>
+    <h1>Consulta CEP</h1>
+    <input type="text" id="txCEP">
+    <input type="button" id="btPesquisar" value="pesquisar">
+    <ul id="infoCEP"></ul>
+
+    <script>
+    const btPesquisar = document.querySelector('#btPesquisar');
+    btPesquisar.addEventListener('click', consultaCEP);
+
+    async function consultaCEP() 
+{
+        const txCEP = document.querySelector('#txCEP');
+        let cep = txCEP.value
+        
+        let urlCEP = `https://viacep.com.br/ws/${cep}/json`
+        const resposta = await fetch(urlCEP);
+        const dadosCEP = await resposta.json();
+
+        const infoCEP = document.querySelector('#infoCEP');
+        infoCEP.innerHTML = `
+        <li>${dadosCEP.cep}</li>
+        <li>${dadosCEP.logradouro}</li>
+        <li>${dadosCEP.complemento}</li>
+        <li>${dadosCEP.bairro}</li>
+        <li>${dadosCEP.localidade}</li>
+        <li>${dadosCEP.uf}</li>
+        `
+};
+    </script>
+</body>
+</html>

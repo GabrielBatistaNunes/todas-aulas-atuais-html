@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 20px;
+            background-color: cornflowerblue;
+            border: solid;
+        }
+        .colorido
+        {
+            background-color: aqua;
+        }
+        span {
+            display: inline-block;
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+            border-width: 10px;
+            border-style: groove;
+            padding: 10px;
+            margin: 30px;
+            width: 20%;
+            height: 30px;
+        }
+        #circulado {
+            display: inline-block;
+            background-color: rgb(255, 0, 0);
+            border-style: solid;
+            border-color: rgb(4, 0, 255);
+            border-width: 10px;
+            border-style: groove;
+            border-radius: 18%;
+            padding: 10px;
+            margin: 30px;
+            width: 20%;
+            height: 30px;
+        }
+        .circulado {
+            display: inline-block;
+            border-style: solid;
+            border-color: springgreen;
+            border-width: 10px;
+            border-style: groove;
+            border-radius: 18%;
+            padding: 10px;
+            margin: 30px;
+            width: 20%;
+            height: 30px;
+        }
+        p {
+            background-color: aliceblue;
+            padding: 20px;
+        }
+        p:hover
+        {
+            background-color: blanchedalmond;
+        }
+        p:hover strong{
+            visibility: visible;
+        }
+        p strong {
+            visibility: hidden;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <span>Texto, texto, texto.</span>
+    <p>Lorem <span class="circulado">ipsum</span>, <strong> dolor sit amet consectetur adipisicing elit.</strong> Asperiores non possimus officia amet veritatis, quisquam tempore. Veniam enim nisi cumque illum eos minus delectus aut maiores soluta, totam in nam.</p>
+    <span id="circulado">Texto, texto, texto.</span>
+    <span style="visibility: hidden;"> Palavras, palavras, palavras.</span>
+    <span class="circulado colorido">Texto, texto, texto.</span>
+    <span>Texto, texto, texto.</span>
+    <span class="colorido">Texto, texto, texto.</span>
+    <span>Texto, texto, texto.</span>
+    <span>Texto, texto, texto.</span>
+</body>
+</html>

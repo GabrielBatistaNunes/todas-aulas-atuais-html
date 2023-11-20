@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Título do site</h1>
+    <h2>subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magni nemo, quam, eum nobis animi inventore ut quia sint id itaque facilis. Maxime iure quidem praesentium similique, quasi dolorum ab?</p>    
+</body>
+<script>
+    let titulo = document.querySelector('h1');
+
+    titulo.innerText='Blog 2023';
+    titulo.style.backgroundColor='cyan';
+    titulo.style.color='black';
+// ex 2
+    const paragrafo = document.createElement('p');
+    paragrafo.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magni nemo, quam, eum nobis animi inventore ut quia sint id itaque facilis. Maxime iure quidem praesentium similique, quasi dolorum ab?';
+    document.body.appendChild(paragrafo);
+    paragrafo.style.fontSize = '80%';
+</script>
+</html>
